@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Destinations | FLY HIGH</title>
+  <meta name="description" content="Explore destinations with FLY HIGH: Ghana, Kenya, Morocco, Zanzibar, Santorini, Egypt, Japan, and Italy. Holiday packages planned from Accra.">
+  <meta name="keywords" content="FLY HIGH, explore destinations, travel tours, holiday packages, adventure travel">
+  <meta name="theme-color" content="#0b7f86">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="strip">
+    <div class="wrap strip-inner">
+      <p>FLY HIGH Headquarters · 123 Skyview Boulevard, Accra</p>
+      <p><a href="tel:+233248126060">024 812 6060</a> · <a href="https://wa.me/233248126060" target="_blank" rel="noopener">WhatsApp</a></p>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html" aria-label="FLY HIGH home">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#ff5c2a"/><path fill="#ffd000" d="M5 19.5c5.2-.6 8.2-5.2 10.2-6.4 1.6 3.4 5.2 5 9.8 3.6-3.6.8-5.6 3.4-7.4 5.6-2.2-1.6-6.4-2-12.6-2.8z"/><circle cx="23" cy="9.5" r="2.2" fill="#fff"/></svg>
+        <span><strong>FLY <span>HIGH</span></strong><small>Travel tours</small></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" aria-current="page">Destinations</a>
+        <a href="packages.html">Tour Packages</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-yellow btn-small nav-cta" href="contact.html">Plan a trip</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-orange btn-small header-cta" href="contact.html">Plan a trip</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Menu</span><span class="bars"></span></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="kicker">Explore destinations</p>
+        <h1>Where do you want the week to go?</h1>
+        <p>Eight places we plan often. Filter by region, or arrive from the search bar with a country already chosen.</p>
+        <p class="note" data-trip-note hidden></p>
+      </div>
+    </section>
+    <section class="section" style="padding-top:10px">
+      <div class="wrap">
+        <div class="pills" role="group" aria-label="Filter by region">
+          <button class="pill is-on" type="button" data-region="all" aria-pressed="true">All</button>
+          <button class="pill" type="button" data-region="africa" aria-pressed="false">Africa</button>
+          <button class="pill" type="button" data-region="islands" aria-pressed="false">Islands</button>
+          <button class="pill" type="button" data-region="europe" aria-pressed="false">Europe</button>
+          <button class="pill" type="button" data-region="asia" aria-pressed="false">Asia</button>
+        </div>
+        <p class="note"><span data-count data-one="destination" data-many="destinations">8 destinations</span></p>
+        <p class="empty">Nothing in that set yet. Try another region, or send a custom itinerary request.</p>
+        <div class="catalog">
+          <article class="card" data-region="africa" data-place="ghana">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Kakum_National_Park.jpg/1280px-Kakum_National_Park.jpg" alt="A suspension bridge through the Kakum forest canopy">
+            <div class="card-body">
+              <p class="place">Ghana</p>
+              <h3>Cape Coast</h3>
+              <p>Forts, a rainforest canopy, and Accra waiting at both ends of the road.</p>
+              <a class="btn btn-orange btn-small go" href="packages.html#cape-coast">View packages</a>
+            </div>
+          </article>
+          <article class="card" data-region="africa" data-place="kenya">
+            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=900&q=70" alt="Wildlife on an open savannah">
+            <div class="card-body">
+              <p class="place">Kenya</p>
+              <h3>Maasai Mara</h3>
+              <p>Wide grass, early starts, and guides who know when to switch the engine off.</p>
+              <a class="btn btn-orange btn-small go" href="packages.html#mara">View packages</a>
+            </div>
+          </article>
+          <article class="card" data-region="africa" data-place="morocco">
+            <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=900&q=70" alt="Blue alleyways in Chefchaouen">
+            <div class="card-body">
+              <p class="place">Morocco</p>
+              <h3>Chefchaouen</h3>
+              <p>A blue town in the hills, with Marrakech colour a short flight away.</p>
+              <a class="btn btn-orange btn-small go" href="packages.html#medina">View packages</a>
+            </div>
+          </article>
+          <article class="card" data-region="islands" data-place="zanzibar">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=70" alt="Clear turquoise water along a white beach">
+            <div class="card-body">
+              <p class="place">Tanzania</p>
+              <h3>Zanzibar</h3>
+              <p>Stone Town spice shops in the morning, a quiet beach once the day softens.</p>
+              <a class="btn btn-orange btn-small go" href="packages.html#spice-shore">View packages</a>
+            </div>
+          </article>
+          <article class="card" data-region="europe" data-place="santorini">
+            <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?auto=format&fit=crop&w=900&q=70" alt="Santorini domes above the caldera">
+            <div class="card-body">
+              <p class="place">Greece</p>
+              <h3>Santorini</h3>
+              <p>White paths, a swim, and dinner that watches the sun drop into the caldera.</p>
+              <a class="btn btn-orange btn-small go" href="packages.html#caldera">View packages</a>
+            </div>
+          </article>
+          <article class="card" data-region="africa" data-place="egypt">
+            <img src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=900&q=70" alt="The Pyramids of Giza in warm light">
+            <div class="card-body">
+              <p class="place">Egypt</p>
+              <h3>The Nile</h3>
+              <p>Cairo first, then a cruise that lets the temples arrive at their own pace.</p>
+              <a class="btn btn-orange btn-small go" href="packages.html#nile">View packages</a>
+            </div>
+          </article>
+          <article class="card" data-region="asia" data-place="japan">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=70" alt="Lanterns along a shrine path in Kyoto">
+            <div class="card-body">
+              <p class="place">Japan</p>
+              <h3>Kyoto</h3>
+              <p>Temple mornings, a rail ride that feels like flight, and streets that glow after dark.</p>
+              <a class="btn btn-orange btn-small go" href="packages.html#kyoto">View packages</a>
+            </div>
+          </article>
+          <article class="card" data-region="europe" data-place="italy">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=70" alt="A canoe on a still mountain lake">
+            <div class="card-body">
+              <p class="place">Italy</p>
+              <h3>Alpine lakes</h3>
+              <p>Boats, long lunches, and a train window doing half the sightseeing.</p>
+              <a class="btn btn-orange btn-small go" href="packages.html#lakes">View packages</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="logo light" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#ff5c2a"/><path fill="#ffd000" d="M5 19.5c5.2-.6 8.2-5.2 10.2-6.4 1.6 3.4 5.2 5 9.8 3.6-3.6.8-5.6 3.4-7.4 5.6-2.2-1.6-6.4-2-12.6-2.8z"/><circle cx="23" cy="9.5" r="2.2" fill="#fff"/></svg><span><strong>FLY <span>HIGH</span></strong><small>Travel tours</small></span></a>
+        <p>Holiday packages and adventure travel planned from Accra.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Tour packages</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Travel enquiry</a>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <p>FLY HIGH Headquarters<br>123 Skyview Boulevard<br>Accra, Ghana</p>
+        <a href="tel:+233248126060">024 812 6060</a>
+        <a href="mailto:hello@flyhigh.travel">hello@flyhigh.travel</a>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <p>© 2026 FLY HIGH. All rights reserved.</p>
+      <p>Explore destinations · Book tours online</p>
+    </div>
+  </footer>
+  <script src="js/site.js" defer></script>
+</body>
+</html>

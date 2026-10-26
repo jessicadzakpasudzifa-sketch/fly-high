@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | FLY HIGH</title>
+  <meta name="description" content="Send a FLY HIGH travel enquiry with your name, email, phone, destination, travel dates, and a message. Visit 123 Skyview Boulevard, Accra, or call 024 812 6060.">
+  <meta name="keywords" content="FLY HIGH, book tours online, holiday bookings, custom itineraries, travel enquiry">
+  <meta name="theme-color" content="#0b7f86">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="strip">
+    <div class="wrap strip-inner">
+      <p>FLY HIGH Headquarters · 123 Skyview Boulevard, Accra</p>
+      <p><a href="tel:+233248126060">024 812 6060</a> · <a href="https://wa.me/233248126060" target="_blank" rel="noopener">WhatsApp</a></p>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html" aria-label="FLY HIGH home">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#ff5c2a"/><path fill="#ffd000" d="M5 19.5c5.2-.6 8.2-5.2 10.2-6.4 1.6 3.4 5.2 5 9.8 3.6-3.6.8-5.6 3.4-7.4 5.6-2.2-1.6-6.4-2-12.6-2.8z"/><circle cx="23" cy="9.5" r="2.2" fill="#fff"/></svg>
+        <span><strong>FLY <span>HIGH</span></strong><small>Travel tours</small></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Tour Packages</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="btn btn-yellow btn-small nav-cta" href="contact.html">Plan a trip</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-orange btn-small header-cta" href="contact.html">Plan a trip</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Menu</span><span class="bars"></span></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="kicker">Contact</p>
+        <h1>Send the trip you have in mind</h1>
+        <p>A name, a destination, and your dates are enough. We reply from the Accra desk with a package or a custom sketch.</p>
+      </div>
+    </section>
+    <section class="section" style="padding-top:8px">
+      <div class="wrap contact-grid">
+        <aside class="panel">
+          <h2>The desk</h2>
+          <p class="note">FLY HIGH Headquarters</p>
+          <ul class="visit-list">
+            <li>123 Skyview Boulevard<br>Accra, Ghana</li>
+            <li><a href="tel:+233248126060">024 812 6060</a></li>
+            <li><a href="mailto:hello@flyhigh.travel">hello@flyhigh.travel</a></li>
+            <li><a href="https://wa.me/233248126060" target="_blank" rel="noopener">WhatsApp the desk</a></li>
+          </ul>
+          <iframe class="map" title="Map of Accra, near FLY HIGH Headquarters" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.230%2C5.530%2C-0.150%2C5.600&amp;layer=mapnik&amp;marker=5.560%2C-0.187"></iframe>
+        </aside>
+        <div class="panel">
+          <h2>Travel enquiry</h2>
+          <p id="asking" class="asking" hidden></p>
+          <form id="enquiry" novalidate>
+            <div class="form-grid">
+              <label class="field">Full name
+                <input name="name" autocomplete="name" required>
+                <small class="error" data-error-for="name"></small>
+              </label>
+              <label class="field">Email
+                <input name="email" type="email" autocomplete="email" required>
+                <small class="error" data-error-for="email"></small>
+              </label>
+              <label class="field">Phone number
+                <input name="phone" type="tel" autocomplete="tel" required>
+                <small class="error" data-error-for="phone"></small>
+              </label>
+              <label class="field">Desired destination
+                <select name="destination" required>
+                  <option value="">Choose a place</option>
+                  <option value="ghana">Ghana</option>
+                  <option value="kenya">Kenya</option>
+                  <option value="morocco">Morocco</option>
+                  <option value="zanzibar">Zanzibar</option>
+                  <option value="santorini">Santorini</option>
+                  <option value="egypt">Egypt</option>
+                  <option value="japan">Japan</option>
+                  <option value="italy">Italy</option>
+                  <option value="unsure">Not sure yet</option>
+                </select>
+                <small class="error" data-error-for="destination"></small>
+              </label>
+              <label class="field">Departure
+                <input name="departure" type="date" required>
+                <small class="error" data-error-for="departure"></small>
+              </label>
+              <label class="field">Return
+                <input name="return" type="date">
+                <small class="error" data-error-for="return"></small>
+              </label>
+              <label class="field wide">Message
+                <textarea name="message" required placeholder="Who is traveling, the pace you want, and anything we should plan around."></textarea>
+                <small class="error" data-error-for="message"></small>
+              </label>
+            </div>
+            <button class="btn btn-orange" type="submit">Send enquiry</button>
+            <p class="note">This preview keeps the enquiry in your browser until a form service is connected.</p>
+          </form>
+          <div class="thanks" id="thanks">
+            <p class="kicker">Enquiry saved</p>
+            <h2>Thank you, <span data-name>traveler</span>.</h2>
+            <p>Your reference is <strong data-ref>FH-0000</strong>. Call <a href="tel:+233248126060">024 812 6060</a> or WhatsApp the Accra desk and quote it. This preview stores the enquiry on this device only.</p>
+            <a class="btn btn-teal" href="packages.html">Browse packages</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="logo light" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#ff5c2a"/><path fill="#ffd000" d="M5 19.5c5.2-.6 8.2-5.2 10.2-6.4 1.6 3.4 5.2 5 9.8 3.6-3.6.8-5.6 3.4-7.4 5.6-2.2-1.6-6.4-2-12.6-2.8z"/><circle cx="23" cy="9.5" r="2.2" fill="#fff"/></svg><span><strong>FLY <span>HIGH</span></strong><small>Travel tours</small></span></a>
+        <p>Holiday bookings from 123 Skyview Boulevard.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Tour packages</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Travel enquiry</a>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <p>123 Skyview Boulevard<br>Accra, Ghana</p>
+        <a href="tel:+233248126060">024 812 6060</a>
+        <a href="mailto:hello@flyhigh.travel">hello@flyhigh.travel</a>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <p>© 2026 FLY HIGH. All rights reserved.</p>
+      <p>Book tours online · Custom itineraries</p>
+    </div>
+  </footer>
+  <script src="js/site.js" defer></script>
+</body>
+</html>
